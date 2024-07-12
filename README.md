@@ -32,12 +32,12 @@ Ensure you have the following installed on your system:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/rohitKumar38344/gemini-clone.git
+   git clone https://github.com/rohitKumar38344/dylan-estate.git
    ```
 2. Navigate to the project directory
 
 ```sh
-   cd gemini-clone
+   cd dylan-estate
 ```
 
 3. Install NPM packages
@@ -59,4 +59,4 @@ Ensure you have the following installed on your system:
 ### Screenshots
 
 Main Interface
-![The Gemini UI!](/src/assets/gemini-main.png)
+![Dylan Estate UI!](/assets/dylan-estate.png)
