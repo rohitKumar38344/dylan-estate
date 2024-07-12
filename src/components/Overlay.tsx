@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const Overlay = ({ goTo }) => {
+export const Overlay = () => {
   const [postConfirmation, setPostConfirmation] = useState(false);
   return (
     <>
@@ -31,7 +31,7 @@ export const Overlay = ({ goTo }) => {
   );
 };
 
-function PostConfirmation({ goTo }) {
+function PostConfirmation() {
   return (
     <div className="flex justify-center  h-screen">
       <div className="font-inter text-login-label w-[820px] mt-24">
@@ -49,10 +49,7 @@ function PostConfirmation({ goTo }) {
         </div>
         <p className="font-jacques text-md-blue mb-16">-Dylan Estates</p>
         <div>
-          <button
-            className="py-3 px-8 rounded bg-md-blue text-login-label-bg mr-10"
-            onClick={() => goTo(0)}
-          >
+          <button className="py-3 px-8 rounded bg-md-blue text-login-label-bg mr-10">
             Edit Property Listing
           </button>
           <button className="py-3 px-8 rounded bg-md-blue text-login-label-bg">

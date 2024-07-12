@@ -1,9 +1,9 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
-  const activeLink = {
-    textDecoration: "underline",
-  };
+  // const activeLink = {
+  //   textDecoration: "underline",
+  // };
   return (
     <header className="flex justify-between h-13 bg-[#FCF8F4] border-[#F6EFE6] px-16">
       <Link className="mt-2" to="/">

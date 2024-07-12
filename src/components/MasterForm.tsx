@@ -84,23 +84,15 @@ const INITIAL_DATA: FormData = {
 };
 export const MasterForm = () => {
   const [data, setData] = useState(INITIAL_DATA);
-  const {
-    isFirstStep,
-    isLastStep,
-    step,
-    steps,
-    currentStepIndex,
-    back,
-    next,
-    goTo,
-  } = useMultistepForm([
-    <PropertyDetails {...data} updateFields={updateFields} />,
-    <LocationDetails {...data} updateFields={updateFields} />,
-    <Features {...data} updateFields={updateFields} />,
-    <PriceDetails {...data} updateFields={updateFields} />,
-    <PropertyImages {...data} updateFields={updateFields} />,
-    <>Test</>,
-  ]);
+  const { isFirstStep, isLastStep, step, currentStepIndex, back, next } =
+    useMultistepForm([
+      <PropertyDetails {...data} updateFields={updateFields} />,
+      <LocationDetails {...data} updateFields={updateFields} />,
+      <Features {...data} updateFields={updateFields} />,
+      <PriceDetails {...data} updateFields={updateFields} />,
+      <PropertyImages />,
+      <>Test</>,
+    ]);
 
   function updateFields(fields: Partial<FormData>) {
     setData((prev) => {
@@ -195,7 +187,7 @@ export const MasterForm = () => {
           </form>
         </section>
       ) : (
-        <Overlay goTo={goTo} />
+        <Overlay />
       )}
     </>
   );
