@@ -28,6 +28,7 @@ type FormData = {
   tenantPreference: string;
   availability: string;
   propertyDescription: string;
+  // Location Details Field
   buildingSociety: string;
   localityArea: string;
   landmarkStreet: string;
@@ -157,7 +158,7 @@ export const MasterForm = () => {
               PROPERTY IMAGES
             </p>
           </header>
-          <div className="h-2 bg-[#D6D6D6] mb-5"></div>
+          <div className={`h-2 bg-[#D6D6D6] mb-5 `}></div>
           <form onSubmit={onSubmit}>
             {step}
 

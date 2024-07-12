@@ -1,9 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Header = () => {
-  // const activeLink = {
-  //   textDecoration: "underline",
-  // };
   return (
     <header className="flex justify-between h-13 bg-[#FCF8F4] border-[#F6EFE6] px-16">
       <Link className="mt-2" to="/">
@@ -22,7 +19,14 @@ export const Header = () => {
           <li>
             <a href="#">MyDashboard/Activity</a>
           </li>
-          <Link to={"list-your-property"}>List Your Property</Link>
+          <NavLink
+            to={"list-your-property"}
+            style={({ isActive }) =>
+              isActive ? { textDecoration: "underline" } : {}
+            }
+          >
+            List Your Property
+          </NavLink>
           <li>
             <a href="#">Contact Us</a>
           </li>

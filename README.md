@@ -59,4 +59,4 @@ Ensure you have the following installed on your system:
 ### Screenshots
 
 Main Interface
-![Dylan Estate UI!](/assets/dylan-estate.png)
+![Dylan Estate UI!](./dylan-estate.png)
