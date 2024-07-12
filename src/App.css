@@ -1,0 +1,55 @@
+body {
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  margin-right: 2px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* creating custom radio buttons */
+/* The Container */
+.radio-btn-ctn {
+  /* display: block; */
+  /* position: relative; */
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-btn-ctn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-btn-ctn:hover input ~ .radio-btn {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-btn-ctn input:checked ~ .radio-btn {
+  background-color: #2196f3;
+}
+
+.border-gray {
+  border: 0.8px solid rgba(135, 135, 135, 1);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Remove arrows/spinners from number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
