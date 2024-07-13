@@ -6,6 +6,7 @@ import { Features } from "./Features";
 import { PriceDetails } from "./PriceDetails";
 import { PropertyImages } from "./PropertyImages";
 import { Overlay } from "./Overlay";
+import ProgressBar from "./ProgressBar";
 
 enum TABS {
   "property-details",
@@ -85,7 +86,7 @@ const INITIAL_DATA: FormData = {
 };
 export const MasterForm = () => {
   const [data, setData] = useState(INITIAL_DATA);
-  const { isFirstStep, isLastStep, step, currentStepIndex, back, next } =
+  const { isFirstStep, isLastStep, step, currentStepIndex, back, next, steps } =
     useMultistepForm([
       <PropertyDetails {...data} updateFields={updateFields} />,
       <LocationDetails {...data} updateFields={updateFields} />,
@@ -158,7 +159,7 @@ export const MasterForm = () => {
               PROPERTY IMAGES
             </p>
           </header>
-          <div className={`h-2 bg-[#D6D6D6] mb-5 `}></div>
+          <ProgressBar tabs={steps} page={currentStepIndex} />
           <form onSubmit={onSubmit}>
             {step}
 

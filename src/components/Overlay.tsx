@@ -9,11 +9,11 @@ export const Overlay = () => {
         </p>
         <Link
           to="../post-confirmation"
-          className="w-full rounded-[4px] mb-[10px] bg-md-blue py-3 px-8 font-bold text-center text-white font-merriweather-sans"
+          className="block w-full rounded-[4px] mb-[10px] bg-md-blue py-3 px-8 font-bold text-center text-white font-merriweather-sans"
         >
           Continue
         </Link>
-        <p className="font-light text-xs font-merriweather-sans">
+        <p className="text-center font-light text-xs font-merriweather-sans">
           By continuing you agree to our{" "}
           <span className="font-normal underline">
             Terms and Conditions & Privacy Policy
