@@ -37,7 +37,7 @@ export const PropertyDetails = ({
       <fieldset>
         <legend className="form-label">Property For : </legend>
         <div className="flex gap-28 px-2">
-          <div>
+          <div className="flex items-center">
             <input
               type="radio"
               name="propertyFor"
@@ -52,7 +52,7 @@ export const PropertyDetails = ({
               Rent
             </label>
           </div>
-          <div>
+          <div className="flex items-center">
             <input
               className="mr-6"
               type="radio"

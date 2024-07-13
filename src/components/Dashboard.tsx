@@ -75,7 +75,7 @@ export const Dashboard = () => {
               </ul>
             </div>
             <div className="rounded-2xl bg-white form-sd overflow-y-scroll max-h-[376px] login-scroll relative">
-              <p className="bg-login-label-bg text-[#122B49] px-[68px] pt-2 text-xl uppercase sticky top-0">
+              <p className="font-merriweather-sans bg-login-label-bg text-[#122B49] px-[68px] pt-2 text-xl uppercase sticky top-0">
                 Lets get you started !
               </p>
               <form action="#" className="pt-[40px] pl-[68px]">
@@ -121,7 +121,7 @@ export const Dashboard = () => {
                       name="name"
                       id="name"
                       placeholder="Name"
-                      className="rounded-sm  p-3 shadow-input-sd outline-none border-login-border w-full"
+                      className="custom-input"
                       required
                     />
                   </div>
@@ -133,7 +133,7 @@ export const Dashboard = () => {
                     <select
                       name="country"
                       id="country"
-                      className="rounded-sm border-login-border p-3 outline-none shadow-input-sd text-[#122B49] w-full"
+                      className="custom-input"
                       required
                     >
                       <option value="India">India</option>
@@ -151,7 +151,7 @@ export const Dashboard = () => {
                       <select
                         name="country-code"
                         id="coutnry-code"
-                        className="rounded-sm border-login-border p-3 outline-none shadow-input-sd text-[#122B49]"
+                        className="custom-input"
                         required
                       >
                         <option value="+91">+91</option>
@@ -165,7 +165,7 @@ export const Dashboard = () => {
                         name="phone"
                         id="phone"
                         placeholder="000-000-0000"
-                        className="rounded-sm border-login-border p-3 outline-none shadow-input-sd text-[#122B49] flex-1"
+                        className="custom-input"
                         required
                       />
                     </div>
@@ -180,7 +180,7 @@ export const Dashboard = () => {
                         name="email"
                         id="name"
                         placeholder="email"
-                        className="rounded-sm border-login-border p-3 shadow-input-sd outline-none text-[#122B49] w-full"
+                        className="custom-input"
                         required
                       />
                     </div>
@@ -198,7 +198,7 @@ export const Dashboard = () => {
                         max={5}
                         name="otp"
                         placeholder="00000"
-                        className="rounded-sm border-login-border p-3 text-[#122B49] outline-none shadow-input-sd w-full"
+                        className="custom-input"
                         required
                       />
                       <p>Resend OTP</p>

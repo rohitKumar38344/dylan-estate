@@ -29,7 +29,7 @@ export const Features = ({
       <fieldset>
         <legend className="form-label">Non-Veg : </legend>
         <div className="flex gap-28 px-2">
-          <div>
+          <div className="flex items-center">
             <input
               type="radio"
               name="nonVeg"
@@ -44,7 +44,7 @@ export const Features = ({
               Allowed
             </label>
           </div>
-          <div>
+          <div className="flex items-center">
             <input
               className="mr-6"
               type="radio"
@@ -65,7 +65,7 @@ export const Features = ({
       <fieldset>
         <legend className="form-label">Pets Allowed : </legend>
         <div className="flex gap-28 px-2">
-          <div>
+          <div className="flex items-center">
             <input
               type="radio"
               name="petsAllowed"
@@ -83,7 +83,7 @@ export const Features = ({
               Yes
             </label>
           </div>
-          <div>
+          <div className="flex items-center">
             <input
               className="mr-6"
               type="radio"
@@ -107,7 +107,7 @@ export const Features = ({
       <fieldset>
         <legend className="form-label">Electricity : </legend>
         <div className="flex gap-28 px-2">
-          <div>
+          <div className="flex items-center">
             <input
               type="radio"
               name="electricity"
@@ -125,7 +125,7 @@ export const Features = ({
               Rare/No Powercut
             </label>
           </div>
-          <div>
+          <div className="flex items-center">
             <input
               className="mr-6"
               type="radio"
@@ -146,7 +146,7 @@ export const Features = ({
       <fieldset>
         <legend className="form-label">Water Supply : </legend>
         <div className="flex gap-28 px-2">
-          <div>
+          <div className="flex items-center">
             <input
               type="radio"
               name="waterSupply"
@@ -164,7 +164,7 @@ export const Features = ({
               Municipal Corporation (BMC)
             </label>
           </div>
-          <div>
+          <div className="flex items-center">
             <input
               className="mr-6"
               type="radio"
@@ -179,7 +179,7 @@ export const Features = ({
               Borewell
             </label>
           </div>
-          <div>
+          <div className="flex items-center">
             <input
               className="mr-6"
               type="radio"

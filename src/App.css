@@ -39,7 +39,7 @@ body {
 
 /* When the radio button is checked, add a blue background */
 .radio-btn-ctn input:checked ~ .radio-btn {
-  background-color: #2196f3;
+  background-color: #ccc;
 }
 
 .border-gray {
@@ -52,4 +52,19 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/* Custom Inputs for Dashbaord */
+.custom-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  border: 1px solid rgba(122, 122, 122, 1);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25) inset;
+  padding: 5px 12px 5px 12px;
+  color: #122b49;
+}
+
+.custom-input:focus {
+  outline: none;
 }
